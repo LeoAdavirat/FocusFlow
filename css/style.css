@@ -1,9 +1,9 @@
-body {
+body.homepage {
   margin: 0;
   background-color: #fdf6e3;
 }
 
-nav ul {
+nav.homepage ul {
   list-style-type: none;
   margin-top: -10px;
   padding: 0;
@@ -32,16 +32,16 @@ li a:hover:not(.active) {
 }
 a.functional_icon img {
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 15px;
   padding: 1px;
   width: 100%;
   height: auto;
 }
 
 a.functional_icon img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 2px 1px #ffffff;
 }
-header h1#homepage {
+header.homepage h1 {
   padding: 0px 25px;
   text-align: center;
   /* background: #ddd6c1; */
