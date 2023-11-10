@@ -5,7 +5,7 @@ body {
 
 ul {
   list-style-type: none;
-  margin-top: 34px;
+  margin-top: -10px;
   padding: 0;
   width: 76px;
   background-color: #ddd6c1;
@@ -40,4 +40,11 @@ img {
 
 img:hover {
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+header h1 {
+  padding: 0px 25px;
+  text-align: center;
+  /* background: #ddd6c1; */
+  color: #584c27;
+  font-size: 30px;
 }
