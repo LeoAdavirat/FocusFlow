@@ -13,3 +13,16 @@ guideBackgroundNote();
 //     guideBackgroundNote();
 //   }
 // };
+
+function replaceInnerHTML() {
+  // Get the element by ID
+  var element = document.getElementById("background-text-homepage");
+
+  // Check if the element exists
+  if (element) {
+    // Replace the innerHTML with your desired content
+    element.innerHTML = "Your new content goes here";
+  } else {
+    console.error("Element with ID 'background-text-homepage' not found");
+  }
+}
