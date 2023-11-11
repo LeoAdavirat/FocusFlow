@@ -22,7 +22,7 @@ nav.homepage ul {
   overflow: auto;
 }
 
-a.functional_icon {
+a.functional-icon {
   display: block;
   color: #000;
   padding: 10px 16px;
@@ -30,7 +30,7 @@ a.functional_icon {
   text-decoration: none;
 }
 
-a.active.functional_icon {
+a.active.functional-icon {
   background-color: #fdf6e3;
   color: white;
 }
@@ -39,7 +39,7 @@ li a:hover:not(.active) {
   background-color: #fdf6e3;
   color: white;
 }
-a.functional_icon img {
+a.functional-icon img {
   border: 1px solid #ddd;
   border-radius: 15px;
   padding: 1px;
@@ -47,7 +47,7 @@ a.functional_icon img {
   height: auto;
 }
 
-a.functional_icon img:hover {
+a.functional-icon img:hover {
   box-shadow: 0 0 2px 1px #ffffff;
 }
 header.homepage h1 {
