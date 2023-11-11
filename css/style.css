@@ -13,6 +13,7 @@ nav.homepage {
 nav.homepage ul {
   list-style-type: none;
   /* margin-top: -10px; */
+  border-radius: 10px;
   padding: 0;
   width: 76px;
   background-color: #ddd6c1;
@@ -58,6 +59,13 @@ header.homepage h1 {
   color: #584c27;
 }
 section.homepage p {
+  font-family: JetBrainsMono-Regular;
+  font-size: 150%;
+  margin: 2.5% 22%;
+  text-align: left;
+  color: #382214;
+}
+section.homepage label {
   font-family: JetBrainsMono-Regular;
   font-size: 150%;
   margin: 2.5% 22%;
