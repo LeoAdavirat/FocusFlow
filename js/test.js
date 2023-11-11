@@ -1,14 +1,13 @@
-// Shared variables
-const bgtask = document.getElementById("backg1");
-
 function EmptytextBg() 
 {
+    if (document.getElementById('backg2') !== null && document.getElementById('backg2') !== null)
     document.getElementById('backg2').innerHTML = ""; // Set that to empty
     document.getElementById('backg3').innerHTML = ""; // Set that to empty
 }
 
 // Check local storage if page is reloaded! 
 window.onload = function () {
+    const bgtask = document.getElementById("backg1");
     let savedBgTask = sessionStorage.getItem('SavedBgTask');
     if (savedBgTask) {
       bgtask.innerHTML = savedBgTask; // Change bg text with task on local storage
@@ -20,7 +19,7 @@ window.onload = function () {
 // THIS WILL CHANGE BACKGROUND TEXT IF USER PRESS 'SHIFT + E' or 'SHIFT + e'
 document.addEventListener('keydown', (event) => {
     if (event.shiftKey && event.key === 'E' || event.shiftKey && event.key === 'e') {
-
+        const bgtask = document.getElementById("backg1");
         let userBgTask = prompt("Change Background Task: ");
         if (userBgTask !== null) {
             bgtask.innerHTML = userBgTask; // Change text on background
