@@ -3,3 +3,4 @@
 - Fixed bugs where text will break by the page, text will reset to default if reloaded.
 - Made bg-task save to SessionStorage instead of LocalStorage ( Will clear if browser or tab is closed!)
 - Rounded corner of nav bar!
+- Fixed Homepage.js little bug. will not display text!
