@@ -65,7 +65,7 @@ section.homepage p {
   text-align: left;
   color: #382214;
 }
-section.background-text-homepage pre {
+pre#background-text-homepage {
   font-family: JetBrainsMono-Regular;
   font-size: 150%;
   margin: 0% 22%;
