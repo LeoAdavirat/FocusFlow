@@ -65,6 +65,14 @@ section.homepage p {
   text-align: left;
   color: #382214;
 }
+section.homepage pre {
+  font-family: JetBrainsMono-Regular;
+  font-size: 150%;
+  margin: 0% 22%;
+  text-align: left;
+  color: #382214;
+  line-height: 140%;
+}
 section.homepage label {
   font-family: JetBrainsMono-Regular;
   font-size: 150%;
