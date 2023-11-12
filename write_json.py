@@ -4,7 +4,11 @@ Even background theme is also a note,
 which means you can edit it by pressing 'Shift + E'
 
 Click on add a note icon on the side to begin
-(For keyboard user: <b>Ctrl + Shift + A</b>)"""}
+(For keyboard user: <b>Ctrl + Shift + A</b>)""",
+"users":{
+    "background-text-homepage":""
+}
+}
 
 import json
 # json.dumps(a)
