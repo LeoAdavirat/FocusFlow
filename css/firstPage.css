@@ -1,0 +1,30 @@
+body {
+  background-color: #fdf6e3;
+}
+header h1 {
+  font-family: JetBrainsMono-Regular;
+  font-size: 300%;
+  margin: 0% 22%;
+  text-align: center;
+  color: #382214;
+  line-height: 140%;
+  cursor: default;
+}
+p#master-your-tasks {
+  font-family: JetBrainsMono-Regular;
+  font-size: 150%;
+  margin: 0% 22%;
+  text-align: center;
+  color: #382214;
+  line-height: 140%;
+  cursor: default;
+}
+p#streamline-your-productivity {
+  font-family: JetBrainsMono-Regular;
+  font-size: 150%;
+  margin: 0% 22%;
+  text-align: center;
+  color: #382214;
+  line-height: 140%;
+  cursor: default;
+}
