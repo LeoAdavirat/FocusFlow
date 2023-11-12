@@ -1,10 +1,10 @@
 function readHomepageJson() {
   return fetch("../json/homepage_json.json")
-    .then(res => res.json())
-    .then(data => {return data;});
+    .then((res) => res.json())
+    .then((data) => {
+      return data;
+    });
 }
-
-
 
 function guideBackgroundNote() {
   document.getElementById("background-text-homepage").innerHTML =
@@ -13,9 +13,8 @@ function guideBackgroundNote() {
     data["background-text-homepage"];
 }
 async function getData() {
-const data = await readHomepageJson();
-console.log(data['background-text-homepage']);
-
+  const data = await readHomepageJson();
+  console.log(data["background-text-homepage"]);
 }
 
 getData();
