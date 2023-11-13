@@ -15,12 +15,24 @@
       window.onbeforeunload = function (e) {
         localStorage.setItem("scrollpos", window.scrollY);
       };
+      document.getElementById("first-image").style.height = window.innerHeight;
+      document.getElementById("master-your-notes").style.height =
+        window.innerHeight - document.querySelector("header").offsetHeight;
+      document.getElementById("introduce-ff").style.height = window.innerHeight;
+      document.getElementById("easy-and-robust").style.height =
+        window.innerHeight;
     </script>
   </head>
   <body>
     <header><h1>FocusFlow</h1></header>
     <section>
-      <div id="master-your-tasks">
+      <img
+        src="/images/master-your-notes.png"
+        id="first-image"
+        style="transform: scaleX(-1)"
+        alt="Master Your Notes"
+      />
+      <div id="master-your-notes">
         <h2>Master Your Tasks with FocusFlow</h2>
         <p>Streamline Your Productivity and Stay Organized!</p>
         <a href="" target="_self" id="get-started_0">Get Started!</a>
