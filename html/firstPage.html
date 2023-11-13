@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FocusFlow</title>
     <link rel="stylesheet" href="/css/firstPage.css" />
+    <!-- <script src="/js/jquery-3.7.1.min.js"></script> -->
     <script>
       // Reload and save scroll position
       document.addEventListener("DOMContentLoaded", function (event) {
@@ -15,12 +16,18 @@
       window.onbeforeunload = function (e) {
         localStorage.setItem("scrollpos", window.scrollY);
       };
-      document.getElementById("first-image").style.height = window.innerHeight;
-      document.getElementById("master-your-notes").style.height =
-        window.innerHeight - document.querySelector("header").offsetHeight;
-      document.getElementById("introduce-ff").style.height = window.innerHeight;
-      document.getElementById("easy-and-robust").style.height =
-        window.innerHeight;
+      window.onload = function () {
+        document.getElementById("first-image").style.height =
+          window.innerHeight;
+        document.getElementById("master-your-notes").style.height =
+          window.innerHeight - document.querySelector("header").offsetHeight;
+        document.getElementById("introduce-ff").style.height =
+          window.innerHeight;
+        document.getElementById("easy-and-robust").style.height =
+          window.innerHeight - document.querySelector("footer").offsetHeight;
+        document.querySelector("footer").style["margin-top"] =
+          -document.querySelector("footer").offsetHeight;
+      };
     </script>
   </head>
   <body>
@@ -30,7 +37,7 @@
         src="/images/master-your-notes.png"
         id="first-image"
         style="transform: scaleX(-1)"
-        alt="Master Your Notes"
+        alt="Master Your Notes Image"
       />
       <div id="master-your-notes">
         <h2>Master Your Tasks with FocusFlow</h2>
@@ -41,6 +48,11 @@
     </section>
     <section>
       <div id="introduce-ff">
+        <!-- <img
+          src="/images/introduce-ff.jpeg"
+          id="second-image"
+          alt="Introduce FocusFlow Image"
+        /> -->
         <h2>Introducing FocusFlow</h2>
         <p>
           Your <i><b>ultimate solution</b></i> for organizing notes efficiently
@@ -56,6 +68,11 @@
     </section>
     <section>
       <div id="easy-and-robust">
+        <!-- <img
+          src="/images/easy-and-robust.jpeg"
+          id="third-image"
+          alt="Easy and Robust Image"
+        /> -->
         <h2>Easy and Robust</h2>
         <ul>
           <li>
