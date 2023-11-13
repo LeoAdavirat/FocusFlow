@@ -155,6 +155,6 @@ footer li a:hover:not(.active) {
 } */
 img {
   float: right;
-  height: 900px;
-  resize: auto;
+  /* height: 900px; */
+  /* resize: auto; */
 }

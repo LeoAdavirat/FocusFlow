@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FocusFlow</title>
-    <link rel="stylesheet" href="/css/firstPage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/firstPage.css" />
     <!-- <script src="/js/jquery-3.7.1.min.js"></script> -->
     <script>
       // Reload and save scroll position
@@ -16,18 +16,22 @@
       window.onbeforeunload = function (e) {
         localStorage.setItem("scrollpos", window.scrollY);
       };
-      window.onload = function () {
-        document.getElementById("first-image").style.height =
-          window.innerHeight;
-        document.getElementById("master-your-notes").style.height =
-          window.innerHeight - document.querySelector("header").offsetHeight;
-        document.getElementById("introduce-ff").style.height =
-          window.innerHeight;
-        document.getElementById("easy-and-robust").style.height =
-          window.innerHeight - document.querySelector("footer").offsetHeight;
-        document.querySelector("footer").style["margin-top"] =
-          -document.querySelector("footer").offsetHeight;
-      };
+      document.addEventListener("DOMContentLoaded", function () {
+        console.log("hi");
+        document.getElementById("first-image").height =
+          window.innerHeight -
+          2 * document.querySelector("header").clientHeight;
+        // document.getElementById("first-image").style.height =
+        //   window.innerHeight - document.querySelector("header").offsetHeight;
+        // document.getElementById("master-your-notes").style.height =
+        //   window.innerHeight - document.querySelector("header").offsetHeight;
+        // document.getElementById("introduce-ff").style.height =
+        //   window.innerHeight;
+        // document.getElementById("easy-and-robust").style.height =
+        //   window.innerHeight - document.querySelector("footer").offsetHeight;
+        // document.querySelector("footer").style["margin-top"] =
+        //   -document.querySelector("footer").offsetHeight;
+      });
     </script>
   </head>
   <body>
