@@ -1,0 +1,6 @@
+It is crucial that we restructure the firstPage for a responsive interface
+Research about approach to "add notes" function
+Next goals:
++ Add notes
++ Loading screen
++ Edit background & custom background
