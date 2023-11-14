@@ -21,6 +21,10 @@
         document.getElementById("first-image").height =
           window.innerHeight -
           2 * document.querySelector("header").clientHeight;
+        document.getElementById("second-image").height =
+          (window.innerHeight * 3) / 4;
+        document.getElementById("second-image").padding =
+          (window.innerHeight * 3) / 4;
         // document.getElementById("first-image").style.height =
         //   window.innerHeight - document.querySelector("header").offsetHeight;
         // document.getElementById("master-your-notes").style.height =
@@ -51,12 +55,12 @@
       </div>
     </section>
     <section>
+      <img
+        src="/images/introduce-ff_1.png"
+        id="second-image"
+        alt="Introduce FocusFlow Image"
+      />
       <div id="introduce-ff">
-        <!-- <img
-          src="/images/introduce-ff.jpeg"
-          id="second-image"
-          alt="Introduce FocusFlow Image"
-        /> -->
         <h2>Introducing FocusFlow</h2>
         <p>
           Your <i><b>ultimate solution</b></i> for organizing notes efficiently
