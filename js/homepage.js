@@ -26,7 +26,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 // Add a note
-fuction;
 
 document.addEventListener("keydown", (event) => {
   if (

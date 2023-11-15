@@ -4,43 +4,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Add A Note - FocusFlow</title>
     <link rel="stylesheet" type="text/css" href="/css/addANote.css" />
+    <link rel="icon" type="x-icon" href="/images/favicon.ico" />
   </head>
   <body>
-    <!-- A button to open the popup form -->
-    <button class="open-button" onclick="openForm()">Open Form</button>
+    <section>
+      <p>This is a simple program to test Add A Note functionality.</p>
+      <p>Click this button:</p>
 
-    <!-- The form -->
-    <div class="form-popup" id="myForm">
-      <form action="/action_page.php" class="form-container">
-        <h1>Login</h1>
-
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required />
-
-        <label for="psw"><b>Password</b></label>
-        <input
-          type="password"
-          placeholder="Enter Password"
-          name="psw"
-          required
-        />
-
-        <button type="submit" class="btn">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
-          Close
-        </button>
-      </form>
-    </div>
-    <script>
-      function openForm() {
-        document.getElementById("myForm").style.display = "block";
-      }
-
-      function closeForm() {
-        document.getElementById("myForm").style.display = "none";
-      }
-    </script>
+      <a
+        href="#"
+        class="functional-icon"
+        title="Add a Note"
+        onclick="addANote(); return false;"
+        ><img src="/images/add_notes_icon.svg" alt="Add notes"
+      /></a>
+    </section>
+    <section>
+      <div id="add-a-note">
+        <input type="text" placeholder="Search.." id="search-notes" />
+      </div>
+    </section>
+    <script src="/js/addANote.js"></script>
   </body>
 </html>
