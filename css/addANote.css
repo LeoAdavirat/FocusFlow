@@ -18,8 +18,8 @@ div#add-a-note {
   position: fixed;
   top: 100px;
   left: 100px;
-  width: 1560px;
-  height: 659px;
+  width: 700px;
+  height: 200px;
 
   border-color: #382214;
   border-style: solid;
@@ -27,5 +27,42 @@ div#add-a-note {
   z-index: 9;
 }
 input#search-notes {
-  margin: 10px 0 10px 10px;
+  margin: 18px 0 10px 15px;
+  width: 600px;
+  height: 37px;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.note-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: 0.5rem;
+}
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
 }
