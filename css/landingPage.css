@@ -17,6 +17,7 @@ header h1 {
   text-align: center;
   color: #382214;
 }
+/* HIGHLIGHT BORDER OUTLINE */
 /* div {
   border-style: dotted;
   border-color: lightskyblue;
@@ -38,7 +39,7 @@ div#master-your-notes {
   width: 60%;
   /* width: 60%; */
   left: 10%;
-  height: 894px;
+  height: 768px;
   position: relative;
   /* border: 3px solid #fdf6e3; */
   /* padding: 5% 0%; */
@@ -90,14 +91,13 @@ div#easy-and-robust p {
   margin-top: 10%;
   font-size: 150%;
 }
-a#get-started_0 {
+a.get-started-button {
   background-color: #382214;
   color: white;
   /* padding: 10px 20px 10px 20px; */
   width: 19%;
   /* height: 6%; */
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 0.5em 1em;
   border-radius: 20px;
   margin-left: 1%;
   text-align: center;
@@ -105,6 +105,18 @@ a#get-started_0 {
   display: inline-block;
   font-weight: bold;
   font-size: 120%;
+}
+a#get-started-1 {
+  width: 60%;
+  padding: 0.35em 1em;
+  background-color: #808080;
+  height: 5%;
+}
+a#get-started-2 {
+  width: 28%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 20px;
 }
 a#sign-in {
   background-color: #808080;
@@ -112,8 +124,7 @@ a#sign-in {
   /* padding: 10px 20px 10px 20px; */
   width: 15%;
   /* height: 6%; */
-  padding-top: 1%;
-  padding-bottom: 1%;
+  padding: 0.5em 1em;
   border-radius: 20px;
   margin-left: 1%;
   text-align: center;
@@ -121,22 +132,7 @@ a#sign-in {
   display: inline-block;
   font-size: 120%;
 }
-a#get-started_1 {
-  background-color: #382214;
-  color: white;
-  /* padding: 10px 20px 10px 20px; */
-  width: 28%;
-  /* height: 6%; */
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border-radius: 20px;
-  margin-left: 1%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-weight: bold;
-  font-size: 120%;
-}
+
 footer ul {
   list-style-type: none;
   margin: 0;
