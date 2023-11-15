@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FocusFlow</title>
-    <link rel="stylesheet" type="text/css" href="/css/firstPage.css" />
+    <link rel="stylesheet" type="text/css" href="/css/landingPage.css" />
     <!-- <script src="/js/jquery-3.7.1.min.js"></script> -->
     <script>
       // Reload and save scroll position
@@ -21,10 +21,16 @@
         document.getElementById("first-image").height =
           window.innerHeight -
           2 * document.querySelector("header").clientHeight;
+        // document.getElementById("master-your-notes").width =
+        //   window.innerWidth -
+        //   document.getElementById("first-image").offsetWidth;
         document.getElementById("second-image").height =
           (window.innerHeight * 3) / 4;
-        document.getElementById("second-image").padding =
+        // document.getElementById("second-image").padding =
+        //   (window.innerHeight * 3) / 4;
+        document.getElementById("third-image").height =
           (window.innerHeight * 3) / 4;
+
         // document.getElementById("first-image").style.height =
         //   window.innerHeight - document.querySelector("header").offsetHeight;
         // document.getElementById("master-your-notes").style.height =
@@ -41,25 +47,20 @@
   <body>
     <header><h1>FocusFlow</h1></header>
     <section>
-      <img
-        src="/images/master-your-notes.png"
-        id="first-image"
-        style="transform: scaleX(-1)"
-        alt="Master Your Notes Image"
-      />
       <div id="master-your-notes">
         <h2>Master Your Tasks with FocusFlow</h2>
         <p>Streamline Your Productivity and Stay Organized!</p>
         <a href="" target="_self" id="get-started_0">Get Started!</a>
         <a href="" target="_self" id="sign-in">Sign In</a>
       </div>
+      <img
+        src="/images/master-your-notes.png"
+        id="first-image"
+        style="transform: scaleX(-1)"
+        alt="Master Your Notes Image"
+      />
     </section>
     <section>
-      <img
-        src="/images/introduce-ff_1.png"
-        id="second-image"
-        alt="Introduce FocusFlow Image"
-      />
       <div id="introduce-ff">
         <h2>Introducing FocusFlow</h2>
         <p>
@@ -73,14 +74,17 @@
           <li>Highly Responsive and Active Window</li>
         </ol>
       </div>
+      <div>
+        <img
+          src="/images/introduce-ff_1.png"
+          id="second-image"
+          alt="Introduce FocusFlow Image"
+          style="margin-left: 45%"
+        />
+      </div>
     </section>
     <section>
       <div id="easy-and-robust">
-        <!-- <img
-          src="/images/easy-and-robust.jpeg"
-          id="third-image"
-          alt="Easy and Robust Image"
-        /> -->
         <h2>Easy and Robust</h2>
         <ul>
           <li>
@@ -101,6 +105,14 @@
         </ul>
         <p>Get Started Today!</p>
         <a href="" target="_self" id="get-started_1">Get Started!</a>
+      </div>
+      <div>
+        <img
+          src="/images/easy-and-robust.png"
+          id="third-image"
+          alt="Easy and Robust Image"
+          style="margin-left: 50%"
+        />
       </div>
     </section>
     <footer>

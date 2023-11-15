@@ -4,6 +4,12 @@ body {
   background-color: #fdf6e3;
   font-family: JetBrainsMono-Regular;
 }
+section {
+  display: flex;
+  /* flex-flow: row wrap; */
+  /* flex-direction: row;
+  flex-wrap: wrap; */
+}
 /* header {
   height: 43px;
 } */
@@ -11,17 +17,26 @@ header h1 {
   text-align: center;
   color: #382214;
 }
+/* div {
+  border-style: dotted;
+  border-color: lightskyblue;
+} */
+
 div#introduce-ff,
 div#easy-and-robust {
   width: 38%;
   left: 10%;
-  height: 937px;
+  height: 600px;
   position: relative;
   /* border: 3px solid #fdf6e3; */
   /* padding: 5% 0%; */
 }
+div#easy-and-robust {
+  height: 780px;
+}
 div#master-your-notes {
-  width: 80%;
+  width: 60%;
+  /* width: 60%; */
   left: 10%;
   height: 894px;
   position: relative;
@@ -79,7 +94,7 @@ a#get-started_0 {
   background-color: #382214;
   color: white;
   /* padding: 10px 20px 10px 20px; */
-  width: 15%;
+  width: 19%;
   /* height: 6%; */
   padding-top: 1%;
   padding-bottom: 1%;
@@ -153,8 +168,3 @@ footer li a:hover:not(.active) {
 /* footer .active {
   background-color: #04aa6d;
 } */
-img {
-  float: right;
-  /* height: 900px; */
-  /* resize: auto; */
-}
