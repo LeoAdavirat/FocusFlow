@@ -22,23 +22,17 @@
       /></a>
     </section>
     <section>
-      <div id="add-a-note">
-        <div class="search-wrapper">
-          <label for="search">Search Users</label>
+      <div class="search-box">
+        <div class="row">
           <input
-            type="search"
-            placeholder="Search.."
-            id="search-notes"
-            data-search
+            type="text"
+            id="input-box"
+            placeholder="Search anything"
+            autocomplete="off"
           />
+          <button>Search</button>
         </div>
-        <div class="note-cards" data-user-cards-container></div>
-        <template data-user-template>
-          <div class="card">
-            <div class="header" data-header></div>
-            <div class="body" data-body></div>
-          </div>
-        </template>
+        <div class="result-box"></div>
       </div>
     </section>
     <script src="/js/addANote.js"></script>

@@ -25,44 +25,60 @@ div#add-a-note {
   border-style: solid;
   background-color: #fdf6e3;
   z-index: 9;
-}
-input#search-notes {
-  margin: 18px 0 10px 15px;
+}.search-box {
   width: 600px;
-  height: 37px;
+  background: #fff;
+  margin: 200px auto 0;
+  border-radius: 5px;
 }
-.search-wrapper {
+.row {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  align-items: center;
+  padding: 10px 20px;
 }
-
 input {
-  font-size: 1rem;
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
+}
+::placeholder {
+  color: #555;
 }
 
-.note-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 0.25rem;
-  margin-top: 1rem;
+.result-box ul {
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.result-box ul li:hover {
+  background: #e9f3ff;
+}
+.result-box {
+  max-height: 300px;
+  overflow-y: scroll;
 }
 
-.card {
-  border: 1px solid black;
-  background-color: white;
-  padding: 0.5rem;
+  color: #555;
 }
-
-.card > .header {
-  margin-bottom: 0.25rem;
+.result-box ul {
+  border-top: 1px solid #999;
+  padding: 15px 10px;
 }
-
-.card > .body {
-  font-size: 0.8rem;
-  color: #777;
+.result-box ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
 }
-
-.hide {
-  display: none;
+.result-box ul li:hover {
+  background: #e9f3ff;
 }
