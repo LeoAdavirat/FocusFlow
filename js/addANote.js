@@ -11,7 +11,14 @@ document.addEventListener("keydown", (event) => {
 
 function addANote() {}
 
-let availableNotesTypes = [];
+let availableNotesTypes = [
+  "Standard Note",
+  "Calendar Note",
+  "Notification Note",
+  "Image Note",
+  "Edit Background & Theme",
+  "Audio Note",
+];
 
 const resultsBox = document.querySelector(".result-box");
 const inputBox = document.getElementById("input-box");
