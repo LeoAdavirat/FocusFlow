@@ -35,6 +35,25 @@
         <div class="result-box"></div>
       </div>
     </section>
+    <body>
+      <div class="container">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="/images/checked.png" />
+          <h2>Thank You!</h2>
+          <p>Your details has been successfully submitted. Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+      <script>
+        let popup = document.getElementById("popup");
+        function openPopup() {
+          popup.classList.add("open-popup");
+        }
+        function closePopup() {
+          popup.classList.remove("open-popup");
+        }
+      </script>
     <script src="/js/addANote.js"></script>
   </body>
 </html>
