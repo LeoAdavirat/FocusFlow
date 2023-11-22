@@ -1,4 +1,5 @@
 @import "custom_font.css";
+
 body {
   margin: 0;
   background-color: #fdf6e3;
@@ -18,10 +19,11 @@ header h1 {
   color: #382214;
 }
 /* HIGHLIGHT BORDER OUTLINE */
-/* div {
+div,
+img {
   border-style: dotted;
   border-color: lightskyblue;
-} */
+}
 
 div#introduce-ff,
 div#easy-and-robust {
