@@ -1,0 +1,29 @@
+@import "custom_font.css";
+
+body {
+  margin: 0;
+  background-color: #fdf6e3;
+  font-family: JetBrainsMono-Regular;
+  color: #382214;
+}
+
+/* HEADER */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #eee8d5;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  height: 75px;
+}
+header h1 {
+  padding: 15px;
+  text-align: center;
+  text-shadow: 0.05em 0.05em#38221430;
+}
+
+/* Sign In Container */
+#sign-in-container {
+  background-color: white;
+}

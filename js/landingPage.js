@@ -8,7 +8,7 @@ window.onbeforeunload = function (e) {
 
 document.addEventListener("DOMContentLoaded", function () {
   console.log("DOMContentLoaded");
-  document.getElementById("first-image").width =
-    window.innerWidth -
-    document.querySelector("#master-your-notes div").offsetWidth;
+  // document.getElementById("first-image").width =
+  //   window.innerWidth -
+  //   document.querySelector("#master-your-notes div").offsetWidth;
 });
