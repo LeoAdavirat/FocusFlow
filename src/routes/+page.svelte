@@ -1,18 +1,10 @@
 <script>
-	let backgroundText =
-		"In FocusFlow, everything is organized into notes.<br><br>\n \
-Even background theme is also a note, <br>\n \
-which means you can edit it by pressing 'Shift + E' <br><br>\n \
-Click on add a note icon on the side to begin <br>\n \
-(For keyboard user: <b>Ctrl + Shift + A)</b>";
 </script>
 
-0
-<h1 class="text-4.5xl text-theme1-text font-body font-normal text-center pt-[25px]">HomePage</h1>
-
-<p class="text-1.5xl text-theme1-text font-body font-normal text-left pl-[22%] pt-[2.5%]">
-	{@html backgroundText}
-</p>
+<header class="bg-theme1-dock">
+	<h1 class="text-4.5xl text-theme1-text font-body font-bold text-center py-[6px]">FocusFlow</h1>
+</header>
+<p class="text-1.5xl text-theme1-text font-body font-normal text-left pl-[22%] pt-[2.5%]"></p>
 
 <style lang="postcss">
 	:global(html) {
